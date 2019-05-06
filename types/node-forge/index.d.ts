@@ -568,7 +568,7 @@ declare module "node-forge" {
 
             addCertificate(certificate: pki.Certificate): void;
             addSigner(options: {
-                key: string;
+                key: string | PrivateKey;
                 certificate: pki.Certificate;
                 digestAlgorithm: string;
                 authenticatedAttributes: { type: string; value?: string }[];
